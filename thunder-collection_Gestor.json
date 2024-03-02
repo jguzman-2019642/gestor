@@ -1,0 +1,428 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestor",
+    "dateExported": "2024-03-01T23:52:31.534Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "53579dde-3198-46b3-bddb-21ba9bed3290",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-01T22:19:40.039Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b961d0da-afe4-424c-8b75-61a8355bd8fd",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-01T22:57:30.980Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "66f3c157-6fb4-425a-8db3-04f455a1e0dd",
+            "name": "publication",
+            "containerId": "",
+            "created": "2024-03-01T23:01:35.262Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "bd73b1ac-2e14-4bfa-ac23-1a5758e215a1",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-03-01T23:12:31.893Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f56380a3-ce6b-41bd-98d0-ab1fe1267b5f",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "53579dde-3198-46b3-bddb-21ba9bed3290",
+            "name": "register",
+            "url": "register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T22:21:20.956Z",
+            "modified": "2024-03-01T22:22:41.948Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Gabriel"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Gabo"
+                    },
+                    {
+                        "name": "email",
+                        "value": "gab@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a86a0954-cece-47b4-9dae-d88a59d1b5df",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "53579dde-3198-46b3-bddb-21ba9bed3290",
+            "name": "login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T22:24:27.430Z",
+            "modified": "2024-03-01T22:48:41.227Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usernameOrEmail",
+                        "value": "Gabo"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "38fa0f6e-f9ae-48ee-817d-137d34cd7f47",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "53579dde-3198-46b3-bddb-21ba9bed3290",
+            "name": "update",
+            "url": "update/65e25531170e485f2122c548",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T22:38:58.299Z",
+            "modified": "2024-03-01T22:49:43.941Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [
+                {
+                    "name": "email",
+                    "value": "24@gmail.com",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "12345678",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "gabriel",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "gaboooooo"
+                    },
+                    {
+                        "name": "email",
+                        "value": "24@gmail.com",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "90f58ded-5eb2-4dca-a93b-c801803b4ec6",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "53579dde-3198-46b3-bddb-21ba9bed3290",
+            "name": "password",
+            "url": "editMyPassword/65e25531170e485f2122c548",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T22:50:41.651Z",
+            "modified": "2024-03-01T22:55:22.225Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "oldPassword",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "2019642"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d2ce54d-c688-42fb-8f6c-522f53d843af",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "b961d0da-afe4-424c-8b75-61a8355bd8fd",
+            "name": "addCategory",
+            "url": "category/add",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T22:58:26.238Z",
+            "modified": "2024-03-01T23:00:41.884Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Nose"
+                    },
+                    {
+                        "name": "description",
+                        "value": "menosJAJAJAJA"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "75d8445f-8250-4329-bf9a-c6182a2c7b7e",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "66f3c157-6fb4-425a-8db3-04f455a1e0dd",
+            "name": "addPublication",
+            "url": "publication/add",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-01T23:02:55.120Z",
+            "modified": "2024-03-01T23:05:15.053Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65e25531170e485f2122c548"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e25e19170e485f2122c56b"
+                    },
+                    {
+                        "name": "title",
+                        "value": "sads"
+                    },
+                    {
+                        "name": "description",
+                        "value": "asd"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f4fe2050-cfba-4652-96e6-66f06b6c6365",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "66f3c157-6fb4-425a-8db3-04f455a1e0dd",
+            "name": "deletePublication",
+            "url": "publication/deleteP/65e25f2b170e485f2122c575",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-01T23:05:37.573Z",
+            "modified": "2024-03-01T23:06:49.962Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0bd37344-64aa-4dc2-b1b9-2bb173109a27",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "66f3c157-6fb4-425a-8db3-04f455a1e0dd",
+            "name": "updateP",
+            "url": "publication/update/65e25f1b170e485f2122c570",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-01T23:07:12.944Z",
+            "modified": "2024-03-01T23:09:31.873Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65e25531170e485f2122c548",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e25e19170e485f2122c56b",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "title",
+                        "value": "GOAT"
+                    },
+                    {
+                        "name": "description",
+                        "value": "messi"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "be63dd77-532b-4881-85c6-ffeb1501bbbc",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "bd73b1ac-2e14-4bfa-ac23-1a5758e215a1",
+            "name": "delete",
+            "url": "comment/deleteC/65e262c5170e485f2122c58c",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-03-01T23:12:39.025Z",
+            "modified": "2024-03-01T23:21:27.072Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c57cfb7-92cb-479c-8d01-503733a9a7e3",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "bd73b1ac-2e14-4bfa-ac23-1a5758e215a1",
+            "name": "updateComment",
+            "url": "comment/update/65e26163170e485f2122c580",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-01T23:12:53.568Z",
+            "modified": "2024-03-01T23:20:19.912Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65e25531170e485f2122c548",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e25f1b170e485f2122c570",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "comment",
+                        "value": "10"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "416eb8c3-625e-48b3-a830-69963e65fb02",
+            "colId": "e59ba612-1d9b-4e2f-b804-76ba937b54ca",
+            "containerId": "bd73b1ac-2e14-4bfa-ac23-1a5758e215a1",
+            "name": "addComment",
+            "url": "comment/add",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-01T23:13:01.977Z",
+            "modified": "2024-03-01T23:20:37.260Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyNTUzMTE3MGU0ODVmMjEyMmM1NDgiLCJ1c2VybmFtZSI6IkdhYm8iLCJlbWFpbCI6ImdhYkBnbWFpbC5jb20iLCJuYW1lIjoiR2FicmllbCIsImlhdCI6MTcwOTMzMzMyMSwiZXhwIjoxNzA5MzQ0MTIxfQ.NaRDq0ZvR9zyPRDxjFu7oNXEURi6qHrnT3j402tCxQ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65e25531170e485f2122c548"
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e25f1b170e485f2122c570"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Nose"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}
